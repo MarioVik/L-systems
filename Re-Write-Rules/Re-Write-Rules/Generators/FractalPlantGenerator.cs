@@ -23,7 +23,7 @@ namespace Re_Write_Rules
         {
             base.SetUpTurtle();
             Turtle.Rotate(25);
-            Turtle.MoveTo(Turtle.X + 50, Turtle.Y - 250);
+            Turtle.MoveTo(Turtle.X + 0, Turtle.Y - 350);
             Turtle.PenVisible = true;
         }
 

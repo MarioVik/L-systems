@@ -1,6 +1,6 @@
 ﻿namespace Re_Write_Rules
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -46,11 +46,13 @@
             this.checkDelay = new System.Windows.Forms.CheckBox();
             this.checkTurtleVisible = new System.Windows.Forms.CheckBox();
             this.checkReset = new System.Windows.Forms.CheckBox();
+            this.colorDialog = new System.Windows.Forms.ColorDialog();
+            this.btnColor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnInit
             // 
-            this.BtnInit.Location = new System.Drawing.Point(9, 12);
+            this.BtnInit.Location = new System.Drawing.Point(12, 178);
             this.BtnInit.Name = "BtnInit";
             this.BtnInit.Size = new System.Drawing.Size(184, 60);
             this.BtnInit.TabIndex = 0;
@@ -63,7 +65,7 @@
             this.LbxInstructions.FormattingEnabled = true;
             this.LbxInstructions.HorizontalScrollbar = true;
             this.LbxInstructions.ItemHeight = 16;
-            this.LbxInstructions.Location = new System.Drawing.Point(9, 513);
+            this.LbxInstructions.Location = new System.Drawing.Point(12, 745);
             this.LbxInstructions.Name = "LbxInstructions";
             this.LbxInstructions.ScrollAlwaysVisible = true;
             this.LbxInstructions.Size = new System.Drawing.Size(427, 228);
@@ -73,7 +75,7 @@
             // BtnExecute
             // 
             this.BtnExecute.Enabled = false;
-            this.BtnExecute.Location = new System.Drawing.Point(9, 342);
+            this.BtnExecute.Location = new System.Drawing.Point(12, 574);
             this.BtnExecute.Name = "BtnExecute";
             this.BtnExecute.Size = new System.Drawing.Size(307, 109);
             this.BtnExecute.TabIndex = 5;
@@ -84,7 +86,7 @@
             // BtnGenerate
             // 
             this.BtnGenerate.Enabled = false;
-            this.BtnGenerate.Location = new System.Drawing.Point(9, 210);
+            this.BtnGenerate.Location = new System.Drawing.Point(12, 442);
             this.BtnGenerate.Name = "BtnGenerate";
             this.BtnGenerate.Size = new System.Drawing.Size(184, 60);
             this.BtnGenerate.TabIndex = 6;
@@ -95,7 +97,7 @@
             // BtnResetAxiom
             // 
             this.BtnResetAxiom.Enabled = false;
-            this.BtnResetAxiom.Location = new System.Drawing.Point(9, 144);
+            this.BtnResetAxiom.Location = new System.Drawing.Point(12, 310);
             this.BtnResetAxiom.Name = "BtnResetAxiom";
             this.BtnResetAxiom.Size = new System.Drawing.Size(184, 60);
             this.BtnResetAxiom.TabIndex = 7;
@@ -106,7 +108,7 @@
             // BtnResetTurtle
             // 
             this.BtnResetTurtle.Enabled = false;
-            this.BtnResetTurtle.Location = new System.Drawing.Point(9, 78);
+            this.BtnResetTurtle.Location = new System.Drawing.Point(12, 244);
             this.BtnResetTurtle.Name = "BtnResetTurtle";
             this.BtnResetTurtle.Size = new System.Drawing.Size(184, 60);
             this.BtnResetTurtle.TabIndex = 8;
@@ -116,7 +118,7 @@
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(9, 457);
+            this.progressBar.Location = new System.Drawing.Point(12, 689);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(427, 50);
             this.progressBar.TabIndex = 9;
@@ -124,7 +126,7 @@
             // BtnReGenerate
             // 
             this.BtnReGenerate.Enabled = false;
-            this.BtnReGenerate.Location = new System.Drawing.Point(9, 276);
+            this.BtnReGenerate.Location = new System.Drawing.Point(12, 508);
             this.BtnReGenerate.Name = "BtnReGenerate";
             this.BtnReGenerate.Size = new System.Drawing.Size(184, 60);
             this.BtnReGenerate.TabIndex = 10;
@@ -135,7 +137,7 @@
             // TbxLines
             // 
             this.TbxLines.Enabled = false;
-            this.TbxLines.Location = new System.Drawing.Point(200, 314);
+            this.TbxLines.Location = new System.Drawing.Point(203, 546);
             this.TbxLines.Name = "TbxLines";
             this.TbxLines.Size = new System.Drawing.Size(116, 22);
             this.TbxLines.TabIndex = 11;
@@ -144,7 +146,7 @@
             // lblLines
             // 
             this.lblLines.AutoSize = true;
-            this.lblLines.Location = new System.Drawing.Point(197, 294);
+            this.lblLines.Location = new System.Drawing.Point(200, 526);
             this.lblLines.Name = "lblLines";
             this.lblLines.Size = new System.Drawing.Size(116, 17);
             this.lblLines.TabIndex = 12;
@@ -153,7 +155,7 @@
             // lblDistance
             // 
             this.lblDistance.AutoSize = true;
-            this.lblDistance.Location = new System.Drawing.Point(319, 409);
+            this.lblDistance.Location = new System.Drawing.Point(322, 641);
             this.lblDistance.Name = "lblDistance";
             this.lblDistance.Size = new System.Drawing.Size(96, 17);
             this.lblDistance.TabIndex = 14;
@@ -162,7 +164,7 @@
             // TbxDistance
             // 
             this.TbxDistance.Enabled = false;
-            this.TbxDistance.Location = new System.Drawing.Point(322, 429);
+            this.TbxDistance.Location = new System.Drawing.Point(325, 661);
             this.TbxDistance.Name = "TbxDistance";
             this.TbxDistance.Size = new System.Drawing.Size(114, 22);
             this.TbxDistance.TabIndex = 13;
@@ -171,7 +173,7 @@
             // lblThickness
             // 
             this.lblThickness.AutoSize = true;
-            this.lblThickness.Location = new System.Drawing.Point(319, 364);
+            this.lblThickness.Location = new System.Drawing.Point(322, 596);
             this.lblThickness.Name = "lblThickness";
             this.lblThickness.Size = new System.Drawing.Size(117, 17);
             this.lblThickness.TabIndex = 16;
@@ -180,7 +182,7 @@
             // TbxThickness
             // 
             this.TbxThickness.Enabled = false;
-            this.TbxThickness.Location = new System.Drawing.Point(322, 384);
+            this.TbxThickness.Location = new System.Drawing.Point(325, 616);
             this.TbxThickness.Name = "TbxThickness";
             this.TbxThickness.Size = new System.Drawing.Size(114, 22);
             this.TbxThickness.TabIndex = 15;
@@ -195,7 +197,7 @@
             "Fractal (binary) tree",
             "Sierpinski triangle",
             "Fractal plant"});
-            this.CbxGenerator.Location = new System.Drawing.Point(199, 12);
+            this.CbxGenerator.Location = new System.Drawing.Point(202, 178);
             this.CbxGenerator.Name = "CbxGenerator";
             this.CbxGenerator.Size = new System.Drawing.Size(121, 24);
             this.CbxGenerator.TabIndex = 17;
@@ -205,7 +207,7 @@
             // 
             this.checkDelay.AutoSize = true;
             this.checkDelay.Enabled = false;
-            this.checkDelay.Location = new System.Drawing.Point(322, 342);
+            this.checkDelay.Location = new System.Drawing.Point(325, 574);
             this.checkDelay.Name = "checkDelay";
             this.checkDelay.Size = new System.Drawing.Size(118, 21);
             this.checkDelay.TabIndex = 18;
@@ -216,7 +218,7 @@
             // 
             this.checkTurtleVisible.AutoSize = true;
             this.checkTurtleVisible.Enabled = false;
-            this.checkTurtleVisible.Location = new System.Drawing.Point(446, 342);
+            this.checkTurtleVisible.Location = new System.Drawing.Point(449, 574);
             this.checkTurtleVisible.Name = "checkTurtleVisible";
             this.checkTurtleVisible.Size = new System.Drawing.Size(105, 21);
             this.checkTurtleVisible.TabIndex = 19;
@@ -227,7 +229,7 @@
             // 
             this.checkReset.AutoSize = true;
             this.checkReset.Enabled = false;
-            this.checkReset.Location = new System.Drawing.Point(202, 78);
+            this.checkReset.Location = new System.Drawing.Point(205, 244);
             this.checkReset.Name = "checkReset";
             this.checkReset.Size = new System.Drawing.Size(153, 21);
             this.checkReset.TabIndex = 20;
@@ -235,11 +237,23 @@
             this.checkReset.UseVisualStyleBackColor = true;
             this.checkReset.CheckedChanged += new System.EventHandler(this.checkReset_CheckedChanged);
             // 
-            // Form1
+            // btnColor
+            // 
+            this.btnColor.Enabled = false;
+            this.btnColor.Location = new System.Drawing.Point(12, 376);
+            this.btnColor.Name = "btnColor";
+            this.btnColor.Size = new System.Drawing.Size(184, 60);
+            this.btnColor.TabIndex = 21;
+            this.btnColor.Text = "Change Color";
+            this.btnColor.UseVisualStyleBackColor = true;
+            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1782, 753);
+            this.ClientSize = new System.Drawing.Size(1924, 985);
+            this.Controls.Add(this.btnColor);
             this.Controls.Add(this.checkReset);
             this.Controls.Add(this.checkTurtleVisible);
             this.Controls.Add(this.checkDelay);
@@ -258,9 +272,9 @@
             this.Controls.Add(this.BtnExecute);
             this.Controls.Add(this.LbxInstructions);
             this.Controls.Add(this.BtnInit);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,6 +300,8 @@
         private System.Windows.Forms.CheckBox checkDelay;
         private System.Windows.Forms.CheckBox checkTurtleVisible;
         private System.Windows.Forms.CheckBox checkReset;
+        private System.Windows.Forms.ColorDialog colorDialog;
+        private System.Windows.Forms.Button btnColor;
     }
 }
 

@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace Re_Write_Rules
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         Generator generator;
         float distanceUnit, brushThickness;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -27,6 +27,7 @@ namespace Re_Write_Rules
             if (!enabled || !checkReset.Checked) BtnResetTurtle.Enabled = enabled;
             checkReset.Enabled = enabled;
             BtnResetAxiom.Enabled = enabled;
+            btnColor.Enabled = enabled;
             BtnGenerate.Enabled = enabled;
             RegenerateAvailability();
             TbxLines.Enabled = enabled;
@@ -78,8 +79,9 @@ namespace Re_Write_Rules
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
+            WindowState = FormWindowState.Maximized;
             CbxGenerator.SelectedIndex = 0;
         }
 
@@ -124,12 +126,21 @@ namespace Re_Write_Rules
             Turtle.ShowTurtle = false;
             generator.SetUpTurtle();
             Turtle.ShowTurtle = checkTurtleVisible.Checked;
+            Turtle.PenColor = colorDialog.Color;
         }
 
         private void BtnResetAxiom_Click(object sender, EventArgs e)
         {
             generator.ResetToAxiom();
             UpdateListBox();
+        }
+
+        private void btnColor_Click(object sender, EventArgs e)
+        {
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                Turtle.PenColor = colorDialog.Color;
+            }
         }
 
         private void BtnGenerate_Click(object sender, EventArgs e)

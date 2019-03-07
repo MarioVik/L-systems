@@ -22,7 +22,7 @@ namespace Re_Write_Rules
         public override void SetUpTurtle()
         {
             base.SetUpTurtle();
-            Turtle.MoveTo(Turtle.X + 150, Turtle.Y - 250);
+            Turtle.MoveTo(Turtle.X + 150, Turtle.Y - 350);
             Turtle.PenVisible = true;
         }
 

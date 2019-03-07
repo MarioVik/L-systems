@@ -33,8 +33,8 @@ namespace Re_Write_Rules
         virtual public void SetUpTurtle()
         {
             Turtle.Reset();
-            Turtle.PenColor = Color.Black;
             Turtle.PenVisible = false;
+            Turtle.PenColor = Color.Black;
         }
 
         public void GenerateInstructions(int n)
