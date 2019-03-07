@@ -9,7 +9,7 @@ namespace Re_Write_Rules
 {
     static class FileHandler
     {
-        static public string FilePath { get { return @"C:\Users\vikto\OneDrive\År3\Procedural Content Generation\L-systems\Re-Write-Rules\Re-Write-Rules\Instructions.txt"; } }
+        static public string FilePath { get { return @"Instructions.txt"; } }
 
         static public void Save(List<string> instructions)
         {
