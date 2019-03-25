@@ -29,6 +29,7 @@ namespace Re_Write_Rules
 
         public override void MoveTurtle(string instructions, float distanceUnit)
         {
+            base.MoveTurtle(instructions, distanceUnit);
             for (int i = 0; i < instructions.Length; i++)
             {
                 switch (instructions[i])
