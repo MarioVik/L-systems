@@ -11,9 +11,15 @@ namespace Re_Write_Rules
 {
     static class ExpressiveRangeLogger
     {
-        static public string FilePath { get { return @"Instructions.txt"; } }
+        static public string FilePath { get { return @"ExpressiveRange.txt"; } }
         static private List<Point> positions;
-        static int recursion = 0;
+        static private int recursion;
+
+        static public void Initialize()
+        {
+            positions = new List<Point>();
+            recursion = 0;
+        }
 
         static public void RecordPosition()
         {
@@ -40,7 +46,7 @@ namespace Re_Write_Rules
             float height = highestY - lowestY;
 
             StreamWriter streamWriter = new StreamWriter(FilePath, true);
-            streamWriter.WriteLine(recursion + "\t" + width + "\t" + height);
+            streamWriter.WriteLine(recursion + "\t\t" + width + "\t\t" + height);
             streamWriter.Close();
             positions.Clear();
             recursion++;

@@ -87,6 +87,7 @@ namespace Re_Write_Rules
 
         private void BtnInit_Click(object sender, EventArgs e)
         {
+            ExpressiveRangeLogger.Initialize();
             switch (CbxGenerator.SelectedItem.ToString())
             {
                 case "Cantor set":

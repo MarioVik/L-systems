@@ -28,7 +28,7 @@ namespace Re_Write_Rules
 
         public override void MoveTurtle(string instructions, float distanceUnit)
         {
-            base.MoveTurtle(instructions, distanceUnit);
+            ExpressiveRangeLogger.RecordPosition();
             for (int i = 0; i < instructions.Length; i++)
             {
                 switch (instructions[i])
@@ -48,8 +48,10 @@ namespace Re_Write_Rules
                         Turtle.Rotate(45);
                         break;
                 }
+                ExpressiveRangeLogger.RecordPosition();
                 ProgressBar.Value = i;
             }
+            base.MoveTurtle(instructions, distanceUnit);
         }
     }
 }
