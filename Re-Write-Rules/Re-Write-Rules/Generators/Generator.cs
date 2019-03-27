@@ -28,7 +28,7 @@ namespace Re_Write_Rules
             FileHandler.SaveNewLine(axiom, append: false);
         }
 
-        virtual public void MoveTurtle(string instructions, float distanceUnit) { ExpressiveRangeLogger.LogExpressiveRange(); }
+        virtual public void MoveTurtle(string instructions, float distanceUnit) { }
 
         virtual public void SetUpTurtle()
         {

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -176,7 +177,11 @@ namespace Re_Write_Rules
             else
                 Turtle.Delay = 0;
 
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
             generator.MoveTurtle(instructions, distanceUnit);
+            stopwatch.Stop();
+            ExpressiveRangeLogger.LogExpressiveRange(instructions.Length, stopwatch.ElapsedMilliseconds);
 
             EnableButtons(true);
             progressBar.Value = 0;

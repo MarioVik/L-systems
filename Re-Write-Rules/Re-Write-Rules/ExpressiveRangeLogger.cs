@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Re_Write_Rules
 {
@@ -27,7 +28,7 @@ namespace Re_Write_Rules
             positions.Add(currentPos);
         }
 
-        static public void LogExpressiveRange()
+        static public void LogExpressiveRange(int instructionsLength, long executionTime)
         {
             float lowestX = float.MaxValue;
             float highestX = float.MinValue;
@@ -46,7 +47,8 @@ namespace Re_Write_Rules
             float height = highestY - lowestY;
 
             StreamWriter streamWriter = new StreamWriter(FilePath, true);
-            streamWriter.WriteLine(recursion + "\t\t" + width + "\t\t" + height);
+            streamWriter.WriteLine(recursion + "\t\t" + width + "\t\t" + height +
+                "\t\t" + instructionsLength + "\t\t" + executionTime);
             streamWriter.Close();
             positions.Clear();
             recursion++;
